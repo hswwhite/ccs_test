@@ -1,0 +1,7 @@
+<projectSpec>
+  <project compilerBuildOptions=" --advice:power=&quot;none&quot;" device="MSP430FR2433" name="adc_lpm_msp430fr2433">
+        
+    <file   action="copy" 
+            path="main.c" />
+  </project>
+</projectSpec>
