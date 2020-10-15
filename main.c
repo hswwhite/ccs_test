@@ -106,7 +106,7 @@ int main(void)
     // Baud Rate calculation
     // Refer to 22.3.10 Setting a Baud Rate of SLAU445: https://www.ti.com/lit/ug/slau445i/slau445i.pdf
     // N = 1000000/9600 = 104.17; N>16; oversampling mode is selected; UCOS16 = 1
-    // UCBRx = INT(N/16) = 6; UCBRFx = INT([(N/16) ? INT(N/16)] ? 16) = 8
+    // UCBRx = INT(N/16) = 6; UCBRFx = INT([(N/16) � INT(N/16)] � 16) = 8
     // UCBRSx = 0x20 at Fractional Portion is 0.1667 according to the table 22-4 on SLAU445
     UCA0BR0 = 6;                                                  // 1000000/16/9600
     UCA0BR1 = 0x00;
